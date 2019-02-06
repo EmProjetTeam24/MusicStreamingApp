@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">MusicStreamingApp</string>
-    <string name="channel_name">music information</string>
+    <string name="notification_title">Currently Playing</string>
+    <string name="channel_name">channel1</string>
     <string name="channel_description"></string>
 </resources>

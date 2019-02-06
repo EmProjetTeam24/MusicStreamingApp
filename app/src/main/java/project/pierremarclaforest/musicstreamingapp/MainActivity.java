@@ -17,7 +17,12 @@ public class MainActivity extends Activity {
     }
 
     public void onClickNotificationButton(View view) {
-        Intent intent = new Intent(this, NotificationService.class);
-        startService(intent);
+        Notification notif = new Notification();
+        notif.type = Notification.Type.CURRENTLY_PLAYING_NOTIF;
+        notif.artist = "Bob Marley";
+        notif.track = "Could you be loved ?";
+
+        AppNotifier appNotifier = new AppNotifier(this, notif);
+        appNotifier.displayNotification();
     }
 }
